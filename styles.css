@@ -2287,8 +2287,8 @@ button {
         opacity: 1;
         background: linear-gradient(to top, rgba(15, 23, 42, 0.6) 0%, transparent 70%);
         padding: 8px;
-        align-items: flex-end;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: center;
     }
 
     .quick-view {
