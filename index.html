@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gekashop - Vente de matériel et consommable informatique</title>
+    <meta name="description" content="Gekashop - Votre boutique en ligne pour le matériel et les consommables informatiques. Qualité garantie, prix compétitifs.">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p><i class="fas fa-truck-fast"></i> Livraison disponible partout au Togo | <i class="fas fa-phone"></i> Contactez-nous: 90 24 59 41</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <span class="logo-geka">Geka</span><span class="logo-shop">shop</span>
+                </a>
+                <div class="header-actions">
+                    <button class="search-toggle" id="searchToggle" aria-label="Rechercher">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Rechercher un produit..." autocomplete="off">
+                    <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-menu" id="navMenu">
+        <div class="nav-menu-header">
+            <span class="nav-logo"><span class="logo-geka">Geka</span><span class="logo-shop">shop</span></span>
+            <button class="nav-menu-close" id="navClose" aria-label="Fermer le menu"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="nav-menu-items">
+            <a href="#accueil" class="nav-link active"><i class="fas fa-home"></i> Accueil</a>
+            <a href="#produits" class="nav-link"><i class="fas fa-box-open"></i> Produits</a>
+            <a href="#categories" class="nav-link"><i class="fas fa-th-large"></i> Catégories</a>
+            <a href="#promotions" class="nav-link"><i class="fas fa-tags"></i> Promotions</a>
+            <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <div class="nav-menu-footer">
+            <p><i class="fab fa-whatsapp"></i> 90 24 59 41</p>
+            <div class="nav-menu-social">
+                <a href="https://wa.me/22890245941" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+            <div class="shape shape-7"></div>
+            <div class="shape shape-8"></div>
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+            <div class="particle particle-6"></div>
+            <div class="particle particle-7"></div>
+            <div class="particle particle-8"></div>
+            <div class="particle particle-9"></div>
+            <div class="particle particle-10"></div>
+        </div>
+        <div class="hero-glow"></div>
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">Nouveautés 2026</span>
+                        <h1>Votre Partenaire <br><span>Informatique</span> de Confiance</h1>
+                        <p>Découvrez notre large gamme de matériel et consommables informatiques de qualité professionnelle.</p>
+                        <div class="hero-buttons">
+                            <a href="#produits" class="btn btn-primary">Voir les Produits <i class="fas fa-arrow-right"></i></a>
+                            <a href="https://wa.me/22890245941" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Nous Contacter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">Offres Spéciales</span>
+                        <h1>Équipez Votre Bureau <br><span>au Meilleur Prix</span></h1>
+                        <p>Imprimantes, ordinateurs, fournitures et accessoires - tout ce dont vous avez besoin.</p>
+                        <div class="hero-buttons">
+                            <a href="#produits" class="btn btn-primary">Découvrir <i class="fas fa-arrow-right"></i></a>
+                            <a href="#promotions" class="btn btn-outline">Voir les Promos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">Service Premium</span>
+                        <h1>Consommables <br><span>pour Professionnels</span></h1>
+                        <p>Cartouches, toners, papier et plus encore. Livraison rapide et service après-vente garanti.</p>
+                        <div class="hero-buttons">
+                            <a href="https://wa.me/22890245941" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Commander</a>
+                            <a href="#contact" class="btn btn-outline">En Savoir Plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots">
+            <button class="hero-dot active" data-slide="0"></button>
+            <button class="hero-dot" data-slide="1"></button>
+            <button class="hero-dot" data-slide="2"></button>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Strip -->
+    <section class="features-strip">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-truck-fast"></i>
+                    <div>
+                        <h4>Livraison Rapide</h4>
+                        <p>Partout au Togo</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-halved"></i>
+                    <div>
+                        <h4>Produits Authentiques</h4>
+                        <p>Qualité garantie</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <h4>Support 24/7</h4>
+                        <p>Assistance technique</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-rotate-left"></i>
+                    <div>
+                        <h4>Satisfait ou Remplacé</h4>
+                        <p>Garantie incluse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Parcourir</span>
+                <h2>Nos Catégories</h2>
+                <p>Explorez notre gamme complète de produits informatiques</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="ordinateurs">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Ordinateurs</h3>
+                    <p>PC portables et de bureau</p>
+                </div>
+                <div class="category-card" data-category="imprimantes">
+                    <div class="category-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Imprimantes</h3>
+                    <p>Imprimantes et scanners</p>
+                </div>
+                <div class="category-card" data-category="consommables">
+                    <div class="category-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3>Consommables</h3>
+                    <p>Cartouches, toners & plus</p>
+                </div>
+                <div class="category-card" data-category="accessoires">
+                    <div class="category-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Accessoires</h3>
+                    <p>Claviers, souris & câbles</p>
+                </div>
+                <div class="category-card" data-category="reseau">
+                    <div class="category-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Réseau</h3>
+                    <p>Routeurs, switches & Wi-Fi</p>
+                </div>
+                <div class="category-card" data-category="stockage">
+                    <div class="category-icon">
+                        <i class="fas fa-hard-drive"></i>
+                    </div>
+                    <h3>Stockage</h3>
+                    <p>Disques durs, SSD & USB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="produits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Notre Catalogue</span>
+                <h2>Produits Populaires</h2>
+                <p>Les meilleurs produits informatiques sélectionnés pour vous</p>
+            </div>
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="ordinateurs">Ordinateurs</button>
+                <button class="filter-btn" data-filter="imprimantes">Imprimantes</button>
+                <button class="filter-btn" data-filter="consommables">Consommables</button>
+                <button class="filter-btn" data-filter="accessoires">Accessoires</button>
+                <button class="filter-btn" data-filter="reseau">Réseau</button>
+                <button class="filter-btn" data-filter="stockage">Stockage</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="ordinateurs">
+                    <div class="product-badge">Populaire</div>
+                    <div class="product-image">
+                        <img src="images/image (1).png" alt="Ordinateur Portable HP ProBook">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="1">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ordinateurs</span>
+                        <h3 class="product-name">Ordinateur Portable HP ProBook</h3>
+                        <p class="product-desc">Intel Core i5, 8Go RAM, 256Go SSD - Idéal pour le travail professionnel</p>
+                        <div class="product-footer">
+                            <span class="product-price">285 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l%27Ordinateur%20Portable%20HP%20ProBook.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="imprimantes">
+                    <div class="product-badge new">Nouveau</div>
+                    <div class="product-image">
+                        <img src="images/image (2).png" alt="Imprimante Multifonction Canon">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="2">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Imprimantes</span>
+                        <h3 class="product-name">Imprimante Multifonction Canon</h3>
+                        <p class="product-desc">Impression, copie, scan - Haute résolution, connexion Wi-Fi intégrée</p>
+                        <div class="product-footer">
+                            <span class="product-price">65 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l%27Imprimante%20Multifonction%20Canon.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="consommables">
+                    <div class="product-image">
+                        <img src="images/image (3).png" alt="Cartouche d'encre HP">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="3">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Consommables</span>
+                        <h3 class="product-name">Cartouche d'Incre HP Originale</h3>
+                        <p class="product-desc">Compatible HP DeskJet & OfficeJet - Noir & couleur haute capacité</p>
+                        <div class="product-footer">
+                            <span class="product-price">15 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20la%20Cartouche%20d%27Incre%20HP.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="accessoires">
+                    <div class="product-badge sale">-15%</div>
+                    <div class="product-image">
+                        <img src="images/image (4).png" alt="Clavier & Souris Sans Fil">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="4">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Accessoires</span>
+                        <h3 class="product-name">Kit Clavier & Souris Sans Fil</h3>
+                        <p class="product-desc">Ergonomique, connexion Bluetooth, autonomie longue durée</p>
+                        <div class="product-footer">
+                            <span class="product-price">12 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20Kit%20Clavier%20%26%20Souris%20Sans%20Fil.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="reseau">
+                    <div class="product-image">
+                        <img src="images/image (5).png" alt="Routeur Wi-Fi 6">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="5">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Réseau</span>
+                        <h3 class="product-name">Routeur Wi-Fi 6 Double Bande</h3>
+                        <p class="product-desc">Haute vitesse, couverture étendue, sécurité avancée pour entreprise</p>
+                        <div class="product-footer">
+                            <span class="product-price">45 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20Routeur%20Wi-Fi%206.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="stockage">
+                    <div class="product-badge">Top Vente</div>
+                    <div class="product-image">
+                        <img src="images/image (6).png" alt="SSD NVMe 1To">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="6">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Stockage</span>
+                        <h3 class="product-name">SSD NVMe M.2 1To</h3>
+                        <p class="product-desc">Ultra rapide, lecture 3500Mo/s - Performance optimale pour PC</p>
+                        <div class="product-footer">
+                            <span class="product-price">55 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20SSD%20NVMe%201To.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-category="consommables">
+                    <div class="product-image">
+                        <img src="images/image (7).png" alt="Toner Samsung">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="7">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Consommables</span>
+                        <h3 class="product-name">Toner Samsung MLT-D111S</h3>
+                        <p class="product-desc">Haute capacité ~1000 pages - Compatible imprimantes Samsung</p>
+                        <div class="product-footer">
+                            <span class="product-price">25 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20Toner%20Samsung.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="accessoires">
+                    <div class="product-image">
+                        <img src="images/image (8).png" alt="�%cran Moniteur 24 pouces">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="8">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Accessoires</span>
+                        <h3 class="product-name">Souris </h3>
+                        <p class="product-desc">Résolution 1920x1080, HDMI/VGA, dalle IPS - Confort visuel optimal</p>
+                        <div class="product-footer">
+                            <span class="product-price">85 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20Moniteur%20LED%2024%22.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card" data-category="imprimantes">
+                    <div class="product-badge new">Nouveau</div>
+                    <div class="product-image">
+                        <img src="images/image (9).png" alt="Imprimante Laser Brother">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="9">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Imprimantes</span>
+                        <h3 class="product-name">Imprimante Laser Brother</h3>
+                        <p class="product-desc">Monochrome haute vitesse, recto-verso automatique, réseau Ethernet</p>
+                        <div class="product-footer">
+                            <span class="product-price">95 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l%27Imprimante%20Laser%20Brother.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-card" data-category="stockage">
+                    <div class="product-image">
+                        <img src="images/image (10).png" alt="Clé USB 3.0">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="10">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Stockage</span>
+                        <h3 class="product-name">Clé USB 3.0 64Go</h3>
+                        <p class="product-desc">Transfert ultra-rapide, design compact, fiable et durable</p>
+                        <div class="product-footer">
+                            <span class="product-price">5 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20la%20Cl%C3%A9%20USB%203.0%2064Go.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-card" data-category="reseau">
+                    <div class="product-image">
+                        <img src="images/image (11).png" alt="Switch Network 8 Ports">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="11">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Réseau</span>
+                        <h3 class="product-name">Switch Réseau 8 Ports Gigabit</h3>
+                        <p class="product-desc">Plug & Play, boîtier métal, performance entreprise pour PME</p>
+                        <div class="product-footer">
+                            <span class="product-price">35 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20Switch%20R%C3%A9seau%208%20Ports.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-card" data-category="ordinateurs">
+                    <div class="product-badge sale">-20%</div>
+                    <div class="product-image">
+                        <img src="images/image (12).png" alt="PC de Bureau Dell">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="12">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ordinateurs</span>
+                        <h3 class="product-name">PC de Bureau Dell OptiPlex</h3>
+                        <p class="product-desc">Intel Core i7, 16Go RAM, 512Go SSD - Puissance pour professionnels</p>
+                        <div class="product-footer">
+                            <span class="product-price">350 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20PC%20de%20Bureau%20Dell%20OptiPlex.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="product-card" data-category="accessoires">
+                    <div class="product-image">
+                        <img src="images/image (13).png" alt="Casque Audio Pro">
+                        <div class="product-overlay">
+                            <button class="quick-view" data-product="13">Aperçu Rapide</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Accessoires</span>
+                        <h3 class="product-name">Casque Audio Professionnel</h3>
+                        <p class="product-desc">Réduction de bruit, microphone intégré, confort longue durée</p>
+                        <div class="product-footer">
+                            <span class="product-price">25 000 FCFA</span>
+                            <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20Casque%20Audio%20Professionnel.%20Pouvez-vous%20me%20donner%20le%20prix%20et%20les%20d%C3%A9tails%20%3F" target="_blank" class="btn-buy-whatsapp">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Acheter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner" id="promotions">
+        <div class="container">
+            <div class="promo-content">
+                <div class="promo-text">
+                    <span class="promo-tag">Offre Limitée</span>
+                    <h2>Besoin d'un devis personnalisé ?</h2>
+                    <p>Contactez-nous directement sur WhatsApp pour obtenir les meilleurs prix sur tous nos produits informatiques.</p>
+                    <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20souhaite%20obtenir%20un%20devis%20personnalis%C3%A9." target="_blank" class="btn btn-whatsapp btn-lg">
+                        <i class="fab fa-whatsapp"></i> Demander un Devis
+                    </a>
+                </div>
+                <div class="promo-features">
+                    <div class="promo-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Prix compétitifs</span>
+                    </div>
+                    <div class="promo-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Réponse rapide</span>
+                    </div>
+                    <div class="promo-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Produits authentiques</span>
+                    </div>
+                    <div class="promo-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Garantie incluse</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3><i class="fas fa-envelope"></i> Restez Informé</h3>
+                <p>Recevez nos offres exclusives et nouveautés directement dans votre boîte mail.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nous Contacter</span>
+                <h2>Contactez Gekashop</h2>
+                <p>Nous sommes à votre disposition pour toute question ou commande</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>90 24 59 41</p>
+                    <a href="https://wa.me/22890245941" target="_blank" class="contact-link">Envoyer un message</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Téléphone</h3>
+                    <p>902 45 941</p>
+                    <a href="tel:+22890245941" class="contact-link">Appeler maintenant</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>contact@gekashop.com</p>
+                    <a href="mailto:contact@gekashop.com" class="contact-link">Envoyer un email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-geka">Geka</span><span class="logo-shop">shop</span>
+                    </a>
+                    <p>Votre partenaire de confiance pour le matériel et les consommables informatiques au Togo.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/22890245941" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#produits">Produits</a></li>
+                        <li><a href="#categories">Catégories</a></li>
+                        <li><a href="#promotions">Promotions</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Catégories</h4>
+                    <ul>
+                        <li><a href="#">Ordinateurs</a></li>
+                        <li><a href="#">Imprimantes</a></li>
+                        <li><a href="#">Consommables</a></li>
+                        <li><a href="#">Accessoires</a></li>
+                        <li><a href="#">Réseau & Stockage</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 90 24 59 41</li>
+                        <li><i class="fas fa-envelope"></i> contact@gekashop.com</li>
+                        <li><i class="fab fa-whatsapp"></i> WhatsApp disponible</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gekashop. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/22890245941?text=Bonjour%20Gekashop%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20vos%20produits." target="_blank" class="whatsapp-float" aria-label="Contactez-nous sur WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="whatsapp-tooltip">Commander sur WhatsApp</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Quick View Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImg" src="" alt="">
+                </div>
+                <div class="modal-details">
+                    <span class="modal-category" id="modalCategory"></span>
+                    <h2 id="modalName"></h2>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <p id="modalDesc"></p>
+                    <div class="modal-features" id="modalFeatures"></div>
+                    <div class="modal-actions">
+                        <a id="modalWhatsapp" href="" target="_blank" class="btn btn-whatsapp btn-lg">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Acheter sur WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
